@@ -2971,7 +2971,7 @@ sendSyncRequest (CompWindow *w)
     else
     {
 	if (!w->syncWaitHandle)
-	    w->syncWaitHandle = compAddTimeout (1000, 1200, syncWaitTimeout, w);
+	    w->syncWaitHandle = compAddTimeout (100, 120, syncWaitTimeout, w);
     }
 }
 
